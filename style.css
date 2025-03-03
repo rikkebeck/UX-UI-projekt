@@ -82,13 +82,9 @@ p {
 .topNav {
     display: flex;
     justify-content: space-between;
-    /* Placerer logoet til venstre og links til højre */
     align-items: center;
     padding: 10px 20px;
-    /* Mindre padding for at undgå for meget højde */
-    /*---background-color: #F5F2EF;---*/
     overflow: hidden;
-    /* Forhindrer baren i at blive for stor */
     position: fixed;
     top: 0;
     left: 0;
@@ -100,13 +96,11 @@ p {
 .navLinks {
     display: flex;
     gap: 15px;
-    /* Mellemrum mellem links */
 }
 
 /*justér logo i nav-baren*/
 #navLogo {
     width: 10rem;
-    /* Mindre bredde for at gøre det mere kompakt */
     height: auto;
     padding: 2px;
 }
@@ -118,7 +112,6 @@ p {
     font-size: 20px;
     font-weight: 100;
     padding: 5px 10px;
-    /*transition: background-color 0.3s;*/
     font-family: "Poppins", serif;
     font-weight: 700;
     font-style: normal;
@@ -130,7 +123,12 @@ p {
     border-radius: 5px;
 }
 
+.topNav.scrolled {
+    background-color: rgba(255, 255, 255, 0.8); /* Eksempel på baggrundsfarve, kan justeres */
+}
+
 /* ----------- styling af forside billede ---------------- */
+/*størrelse på billede */
 #forsideBillede {
     width: 100%;
     position: absolute;
@@ -139,7 +137,7 @@ p {
     z-index: -1;
 }
 
-
+/* gradient og link til selve billedet*/
 .imageContainer {
     width: 100%;
     height: 95%;
@@ -328,5 +326,5 @@ article {
 
 /* --- Hover-effekt (streg under, når musen kommer over, hvis ønsket --- */
 .footerTekst a:hover {
-    font-weight: 1000;
+    color: #FCB9BA;
 }
