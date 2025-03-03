@@ -1,0 +1,201 @@
+/* Generel styling HTML and body styling */
+html,
+body {
+    font-size: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFCF6;
+    height: 100%;
+}
+
+/* Styling af fonte */
+h1 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 100px;
+    margin: 0;
+    color: #FFFCF6;
+}
+
+h2 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    color: #2c2c2c;
+    font-style: italic;
+    font-size: 35px;
+    margin: 30px;
+}
+
+h3 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    color: #2c2c2c;
+    font-size: 25px;
+    margin: 0;
+}
+
+h4 {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    color: #2c2c2c;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -80px;
+}
+
+h5 {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    color: #2c2c2c;
+    font-size: 15px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+h6 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #FFDE17;
+    font-size: 25px;
+    margin: 0;
+}
+
+p {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #2c2c2c;
+}
+
+/* ----------------- styling af top nav -------------------*/
+/*selve baren*/
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    /* Placerer logoet til venstre og links til højre */
+    align-items: center;
+    padding: 10px 20px;
+    /* Mindre padding for at undgå for meget højde */
+    /*---background-color: #F5F2EF;---*/
+    overflow: hidden;
+    /* Forhindrer baren i at blive for stor */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*juster links-container*/
+.navLinks {
+    display: flex;
+    gap: 15px;
+    /* Mellemrum mellem links */
+}
+
+/*justér logo i nav-baren*/
+#navLogo {
+    width: 10rem;
+    /* Mindre bredde for at gøre det mere kompakt */
+    height: auto;
+    padding: 2px;
+}
+
+/*navigation links*/
+.topNav a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 5px 10px;
+    /*transition: background-color 0.3s;*/
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*hover-effekt, når du tager musen over*/
+.topNav a:hover {
+    color: #FFDE17;
+    border-radius: 5px;
+}
+
+/* ----------- styling af forside billede ---------------- */
+#forsideBillede {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+.imageContainer {
+    width: 100%;
+    height: 95%;
+    background: linear-gradient(to bottom, rgba(255, 252, 246, 0) 43%, #FFFCF6 83%), url(../images/forsideBillede.png) center/cover no-repeat;
+    background-position: top left;
+    background-size: cover;
+}
+
+
+/* --------- tekst oven på forside billede ------------ */
+#tekstOverlay {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    top: 30%;
+}
+
+#forsideOverskrift2 {
+    margin-top: -30px;
+}
+
+/* --------- intro tekst på forside ------------------- */
+.introTekst {
+    margin: 50px 0 50px 10%;
+    width: 70%;
+    line-height: 40px;
+}
+
+
+/* ------------ Produkt container med slider -----------------*/
+.produktContainer {
+    margin: 15% auto;
+}
+
+.produktSlider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto; /* Aktiver horisontal scrolling */
+    scroll-behavior: smooth; /* Gør scrolling mere glidende */
+    padding-left: 10%;
+    
+}
+
+.produkt {
+    max-width: 30%;
+    flex: 0 0 auto; /* Sørger for, at hvert element har en fast størrelse */
+    
+}
+
+.produkt img {
+    width: 100%;
+    height: auto;
+    margin-top: -80px;
+}
+
+.produkt img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
