@@ -27,7 +27,7 @@ h2 {
     font-weight: 800;
     color: #2c2c2c;
     font-style: italic;
-    font-size: 35px;
+    font-size: 50px;
     margin: 30px;
 }
 
@@ -35,7 +35,7 @@ h3 {
     font-family: "Poppins", serif;
     font-weight: 800;
     color: #2c2c2c;
-    font-size: 25px;
+    font-size: 35px;
     margin: 0;
 }
 
@@ -73,6 +73,8 @@ p {
     font-weight: 300;
     font-style: normal;
     color: #2c2c2c;
+    font-size: 20px;
+    line-height: 40px;
 }
 
 /* ----------------- styling af top nav -------------------*/
@@ -91,6 +93,7 @@ p {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 }
 
 /*juster links-container*/
@@ -163,7 +166,6 @@ p {
 .introTekst {
     margin: 50px 0 50px 10%;
     width: 70%;
-    line-height: 40px;
 }
 
 
@@ -198,4 +200,133 @@ p {
 .produkt img:hover {
     transform: scale(1.1);
     transition: 0.3s ease;
+}
+
+/*------- Citat med graduering --------- */
+/* Container, der dækker hele bredden */
+.citatContainer {
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #FFFCF6 , #FFDF98, #EB877B, #FFFCF6);
+    opacity: 90%;
+    height: 550px;
+    z-index: -1;
+  }
+  
+  .citat {
+    color: #ffffff;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 70px;
+  }
+
+
+/* ----- Vores historie del med billede og tekst ----- */
+#historie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* To kolonner: Billeder + tekst */
+    gap: 40px;
+    max-width: 90%;
+    margin: auto;
+    padding: 50px 20px;
+    align-items: center;
+}
+
+/* Billeder */
+figure {
+    display: grid;
+    gap: 20px;
+}
+
+figure img {
+    width: 100%;
+}
+
+/* Tekst styling */
+article {
+    text-align: left;
+}
+
+/* Knappen */
+.knap {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #FCB9BA;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    font-family: "Poppins", serif;
+}
+
+.knap:hover {
+    background-color: #FFDF98;
+}
+
+/* ----------------------------Footer------------------------ */
+.footer {
+    background: linear-gradient(to bottom, #FFFCF6 , #ffebbe);
+    padding: 20px 0;
+    color: #2c2c2c;
+    width: 100%;
+    margin-top: 10%;
+}
+
+/* --- Container for footeren ---- */
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 0 5%;
+}
+
+/* --- Billedet i footeren ---- */
+.footerLogo img {
+    margin-left: 8%;
+}
+
+/* --- de 3 kolonner --- */
+.footerKolonner {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.footerTekst {
+    width: 30%;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.footerTekst h5 {
+    margin-bottom: 5%;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footerTekst p {
+    font-size: 13px;
+    margin: 0;
+}
+
+/* ---- Fjern standard styling fra links i footeren ---- */
+.footerTekst a {
+    text-decoration: none;
+    /* Fjern understregning */
+    color: #000;
+    /* Sort tekstfarve som resten af teksten */
+    font-size: 13px;
+    /* Samme skrifttype størrelse som <p> */
+   
+}
+
+/* --- Hover-effekt (streg under, når musen kommer over, hvis ønsket --- */
+.footerTekst a:hover {
+    font-weight: 1000;
 }
