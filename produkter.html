@@ -22,7 +22,9 @@
     <!-- Navigation i header-->
     <header>
         <nav class="topNav">
-            <img src="images/logo.svg" alt="tekst logo" id="navLogo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="tekst logo" id="navLogo">
+            </a>
 
             <div class="navLinks">
                 <a href="#">PRODUKTER</a>
@@ -96,30 +98,37 @@
         <h2>DE ØVRIGE ZEROBUZZ VARIANTER:</h2>
 
         <section class="varianterContainer">
-            <div class="boksTilHverVariant" onclick="changeToPink()">
+            <!-- ZeroPink variant container til brug i funktion -->
+            <div class="boksTilHverVariant boksTilHverVariantPink" onclick="changeToPink()">
                 <img src="images/pink.png" alt="ZeroBuzz Pink" class="billedeVarianter">
                 <h4>ZERO PINK</h4>
-                <h5 class="tekstSmag">MED GRAPE.</h5>
-                <h5>FRISK OG FRUGTIG</h5>            
+                <h5>MED GRAPE.</h5>
+                <h5>FRISK OG FRUGTIG</h5>
             </div>
+
+            <!-- ZeroGreen variant container, til brug i funktion men som er gemt for nu -->
+            <div class="boksTilHverVariant boksTilHverVariantGreen" style="display:none;" onclick="changeToGreen()">
+                <img src="images/green.png" alt="ZeroBuzz Green" class="billedeVarianter">
+                <h4>ZERO GREEN</h4>
+                <h5>MED LIME.</h5>
+                <h5>FRISK OG FRUGTIG</h5>
+            </div>
+
             <div class="boksTilHverVariant">
                 <img src="images/yellow.png" alt="ZeroBuzz Yellow" class="billedeVarianter">
                 <h4>ZERO YELLOW</h4>
                 <h5>MED CITRON.</h5>
-                <h5>FRISK OG FRUGTIG</h5>   
+                <h5>FRISK OG FRUGTIG</h5>
             </div>
             <div class="boksTilHverVariant">
                 <img src="images/orange.png" alt="ZeroBuzz Orange" class="billedeVarianter">
                 <h4>ZERO ORANGE</h4>
                 <h5>MED APPELSIN.</h5>
-                <h5>FRISK OG FRUGTIG</h5>   
+                <h5>FRISK OG FRUGTIG</h5>
             </div>
         </section>
 
     </main>
-
-
-
 
 
 
