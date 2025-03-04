@@ -1,0 +1,90 @@
+.topNav {
+    background-color: rgba(255, 252, 246, 0.9);
+    transition: background-color 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+}
+
+/* styling af flexboks øverst med dåse og tekst */
+.produktContainer {
+    display: flex;
+    max-height: 700px;
+}
+
+#billedeZeroGreen {
+    height: 100%;
+}
+
+.kolonneBillede {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kolonneTekst {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 80px;
+}
+
+/* styling af tekst i flexboksen */
+#tekstBeskrivelse{
+    font-style: italic;
+    font-size: 20px;
+}
+
+#tekstNaeringsindhold{
+    font-size: 15px;
+}
+
+td {
+    font-size: 12px;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    width: 75%;
+}
+
+.tekstIndholdGreen {
+    color: #4C6749;
+}
+
+.tekstIndhold {
+    text-align: right;
+}
+
+
+/* beskrivelse af teksten */
+.tekstBeskrivelseZeroGreen{
+    max-width: 80%;
+    margin: auto;
+}
+
+/* container med øvrige varianter */
+.varianterContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.billedeVarianter{
+    max-width: 80%;
+    margin: auto;
+}
+
+.boksTilHverVariant{
+    display: flex;
+    flex-direction: column;
+}
+
+/* hover effekt til de enkelte øldåser */
+.billedeVarianter:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+
+
+
