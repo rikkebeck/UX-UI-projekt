@@ -1,0 +1,190 @@
+/* ----------------------------Generel styling------------------------ */
+/* Generel styling HTML and body styling */
+html,
+body {
+    font-size: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFCF6;
+    height: 100%;
+}
+
+/* Styling af fonte */
+h1 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 100px;
+    margin: 0;
+    color: #FFFCF6;
+}
+
+h2 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    color: #2c2c2c;
+    font-style: italic;
+    font-size: 50px;
+    margin: 30px;
+}
+
+h3 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    color: #2c2c2c;
+    font-size: 35px;
+    margin: 0;
+}
+
+h4 {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    color: #2c2c2c;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -80px;
+}
+
+h5 {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    color: #2c2c2c;
+    font-size: 15px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+h6 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #FFDE17;
+    font-size: 25px;
+    margin: 0;
+}
+
+p {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #2c2c2c;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+/* ----------------------------header------------------------ */
+/* ----------------- styling af top nav -------------------*/
+/*selve baren*/
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/*juster links-container*/
+.navLinks {
+    display: flex;
+    gap: 15px;
+}
+
+/*justér logo i nav-baren*/
+#navLogo {
+    width: 10rem;
+    height: auto;
+    padding: 2px;
+}
+
+/*navigation links*/
+.topNav a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 5px 10px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*hover-effekt, når du tager musen over*/
+.topNav a:hover {
+    color: #FFDE17;
+    border-radius: 5px;
+}
+
+.topNav.scrolled {
+    background-color: rgba(255, 255, 255, 0.8); /* Eksempel på baggrundsfarve, kan justeres */
+}
+
+/* ----------------------------Footer------------------------ */
+.footer {
+    background: linear-gradient(to bottom, #FFFCF6 , #ffebbe);
+    padding: 20px 0;
+    color: #2c2c2c;
+    width: 100%;
+    margin-top: 10%;
+}
+
+/* --- Container for footeren ---- */
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 0 5%;
+}
+
+/* --- Billedet i footeren ---- */
+.footerLogo img {
+    margin-left: 8%;
+}
+
+/* --- de 3 kolonner --- */
+.footerKolonner {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.footerTekst {
+    width: 30%;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.footerTekst h5 {
+    margin-bottom: 5%;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footerTekst p {
+    font-size: 13px;
+    margin: 0;
+}
+
+/* ---- Fjern standard styling fra links i footeren ---- */
+.footerTekst a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+/* --- Hover-effekt (streg under, når musen kommer over, hvis ønsket --- */
+.footerTekst a:hover {
+    color: #FCB9BA;
+}

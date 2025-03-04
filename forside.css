@@ -1,0 +1,137 @@
+/* ----------- styling af forside billede ---------------- */
+/*størrelse på billede */
+#forsideBillede {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* gradient og link til selve billedet*/
+.imageContainer {
+    width: 100%;
+    height: 95%;
+    background: linear-gradient(to bottom, rgba(255, 252, 246, 0) 43%, #FFFCF6 83%), url(../images/forsideBillede.png) center/cover no-repeat;
+    background-position: top left;
+    background-size: cover;
+}
+
+
+/* --------- tekst oven på forside billede ------------ */
+#tekstOverlay {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    top: 30%;
+}
+
+#forsideOverskrift2 {
+    margin-top: -30px;
+}
+
+/* --------- intro tekst på forside ------------------- */
+.introTekst {
+    margin: 50px 0 50px 10%;
+    width: 70%;
+}
+
+
+/* ------------ Produkt container med slider -----------------*/
+.produktContainer {
+    margin: 15% auto;
+}
+
+.produktSlider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto; /* Aktiver horisontal scrolling */
+    scroll-behavior: smooth; /* Gør scrolling mere glidende */
+    padding-left: 10%;
+    
+}
+
+.produkt {
+    max-width: 30%;
+    flex: 0 0 auto; /* Sørger for, at hvert element har en fast størrelse */
+}
+
+.produkt img {
+    width: 100%;
+    height: auto;
+    margin-top: -80px;
+}
+
+.produkt img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+/*------- Citat med graduering --------- */
+/* Container, der dækker hele bredden */
+.citatContainer {
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #FFFCF6 , #FFDF98, #EB877B, #FFFCF6);
+    opacity: 90%;
+    height: 550px;
+    z-index: -1;
+  }
+  
+  .citat {
+    color: #ffffff;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 70px;
+  }
+
+
+/* ----- Vores historie del med billede og tekst ----- */
+#historie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* To kolonner: Billeder + tekst */
+    gap: 40px;
+    max-width: 90%;
+    margin: auto;
+    padding: 50px 20px;
+    align-items: center;
+}
+
+/* Billeder */
+figure {
+    display: grid;
+    gap: 20px;
+}
+
+figure img {
+    width: 100%;
+}
+
+/* Tekst styling */
+article {
+    text-align: left;
+}
+
+/* Knappen */
+.knap {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #FCB9BA;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    font-family: "Poppins", serif;
+}
+
+.knap:hover {
+    background-color: #FFDF98;
+}
