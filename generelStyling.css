@@ -98,6 +98,7 @@ p {
 /*juster links-container*/
 .navLinks {
     display: flex;
+   align-items: center;
     gap: 15px;
 }
 
@@ -127,14 +128,57 @@ p {
 }
 
 .topNav.scrolled {
-    background-color: rgba(255, 252, 246, 0.9); /* Gør den lidt tydeligere */
+    background-color: rgba(255, 252, 246, 0.9);
+    /* Gør den lidt tydeligere */
     transition: background-color 0.3s ease-in-out;
-    backdrop-filter: blur(5px); /* Tilføjer en moderne glas-effekt */
+    backdrop-filter: blur(5px);
+    /* Tilføjer en moderne glas-effekt */
 }
+
+
+
+/* --------- intro tekst på forside og undersider ------------------- */
+.introTekst {
+    margin: 50px auto 50px 10%;
+    width: 70%;
+}
+
+
+/*------------ gul punktum som bruges flere steder ---------------*/
+.gulPunktum {
+    color: #FFDE17; /* Gul farve */
+}
+
+/*------------- Citater med graduering ------------------- */
+/* Container, der dækker hele bredden */
+.citatContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #FFFCF6, #FFDF98, #EB877B, #FFFCF6);
+    opacity: 90%;
+    height: 550px;
+    z-index: -1;
+}
+
+.citat {
+    color: #ffffff;
+    text-align: center;
+    width: 90%;
+    margin: 150px auto 0 auto;
+    font-size: 70px;
+}
+
+#citatUndertekst {
+    color: #ffffff;
+}
+
 
 /* ----------------------------Footer------------------------ */
 .footer {
-    background: linear-gradient(to bottom, #FFFCF6 , #ffebbe);
+    background: linear-gradient(to bottom, #FFFCF6, #ffebbe);
     padding: 20px 0;
     color: #2c2c2c;
     width: 100%;

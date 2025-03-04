@@ -1,16 +1,16 @@
-// Global tilstand for at holde styr på, hvilken variant der er aktiv (Pink eller Green)
-let currentVariant = "green"; // Starter med "green"
+// Variabel til at holde styr på, hvilken ZeroBuzz variant der er aktiv (Pink eller Green)
+let currentVariant = "green"; // Starter med at "green" er aktiv
 
-// Funktion til at ændre informationerne til Zero Pink
+// Funktion til at ændre informationerne om til Zero Pink.
 function changeToPink() {
-    if (currentVariant === "green") { // Tjekker om den nuværende variant er grøn
-        // Opdater billede og tekst for Zero Pink
-        document.getElementById("billedeZeroGreen").src = "images/pink.png"; // Skift billede
-        document.querySelector("h2").innerText = "ZERO PINK"; // Skift overskrift
-        document.getElementById("tekstBeskrivelse").innerText = "MED GRAPE. FRISK OG FRUGTIG"; // Skift beskrivelse
-        document.getElementById("tekstNaeringsindhold").innerText = "Kalorier og Næringsindhold per 100ml:"; // Skift næringsindhold overskrift
+    if (currentVariant === "green") { // funktionen tjekker om den nuværende variant er grøn når brugeren trykker
+        
+        // Her er de ændringer som funktionen laver
+        document.getElementById("billedeZeroGreen").src = "images/pink.png"; // Skifter billede øverst på siden
+        document.querySelector("h2").innerText = "ZERO PINK"; // Skifter overskriften
+        document.getElementById("tekstBeskrivelse").innerText = "MED GRAPE. FRISK OG FRUGTIG"; // Skifter beskrivelsen
 
-        // Skift indholdet i tabellen (tilføj din ønskede indhold for Zero Pink)
+        // Skifter indholdet i tabellen + laver teksten til venstre pink istedet for grøn
         let table = document.querySelector(".kolonneTabel");
         table.innerHTML = `
             <tr>
@@ -43,7 +43,7 @@ function changeToPink() {
             </tr>
         `;
 
-        // Skift beskrivelsen af Zero Pink
+        // Skifter beskrivelsen til Zero Pink's beskrivelse
         document.querySelector(".tekstBeskrivelseZeroGreen").innerHTML = `
             Zero Pink er en forfriskende og sprudlende alkoholfri øl med en perfekt balance mellem syrlig grape og let bitterhed fra humlen. Med sin frugtige karakter og livlige smagsprofil er den det oplagte valg til
                 både solrige dage, spontane aftener og hyggelige sammenkomster.<br><br>Den friske side: En let og
@@ -51,13 +51,14 @@ function changeToPink() {
                 <br><br>Den aromatiske side: En velafstemt kombination af nøje udvalgte humler og let maltprofil, der
                 sikrer dybde og balance i hver tår.<br><br>  `;
 
-        // Skift variantens tilstand til Pink
+        // Skifter variantens tilstand til Pink
         currentVariant = "pink";
 
-        // Aktiver funktionen til at ændre tilbage til Zero Green
-        document.querySelector(".boksTilHverVariantGreen").style.display = "flex"; // Gør ZeroBuzz Green containeren synlig
+        // nederst på siden under "De øvrige ZeroBuzz varianter" skal vi have den pinke byttet ud med grøn
+        // Vi gør Green varianten synlig
+        document.querySelector(".boksTilHverVariantGreen").style.display = "flex";
 
-        // Skjul ZeroBuzz Pink containeren 
+        // vi skjuler Pink varianten  
         document.querySelector(".boksTilHverVariantPink").style.display = "none";
 
         // Rul til toppen af siden når funktionen er kørt
@@ -66,16 +67,17 @@ function changeToPink() {
     }
 }
 
-// Funktion til at ændre informationerne tilbage til Zero Green
+// Funktion til at ændre informationerne tilbage til Zero Green (altså så man kan trykke på den grønne igen)
 function changeToGreen() {
     if (currentVariant === "pink") { // Tjekker om den nuværende variant er Pink
-        // Opdater billede og tekst for Zero Green
-        document.getElementById("billedeZeroGreen").src = "images/green.png"; // Skift billede
-        document.querySelector("h2").innerText = "ZERO GREEN"; // Skift overskrift
-        document.getElementById("tekstBeskrivelse").innerText = "MED LIME. FRISK OG FRUGTIG"; // Skift beskrivelse
-        document.getElementById("tekstNaeringsindhold").innerText = "Kalorier og Næringsindhold per 100ml:"; // Skift næringsindhold overskrift
+        
+        
+        // Her er de ændringer som funktionen laver
+        document.getElementById("billedeZeroGreen").src = "images/green.png"; // Skifter billede øverst på siden
+        document.querySelector("h2").innerText = "ZERO GREEN"; // Skifter overskrift
+        document.getElementById("tekstBeskrivelse").innerText = "MED LIME. FRISK OG FRUGTIG"; // Skifter beskrivelse
 
-        // Skift indholdet i tabellen (tilføj din ønskede indhold for Zero Green)
+        // Skifter indholdet i tabellen + laver teksten til venstre grøn
         let table = document.querySelector(".kolonneTabel");
         table.innerHTML = `
             <tr>
@@ -108,7 +110,7 @@ function changeToGreen() {
             </tr>
         `;
 
-        // Skift beskrivelsen af Zero Green
+        // Skifter beskrivelsen til Zero Green
         document.querySelector(".tekstBeskrivelseZeroGreen").innerHTML = `
             Zero Green er en forfriskende og sprudlende alkoholfri øl med en
                 perfekt balance mellem syrlig lime og
@@ -119,21 +121,20 @@ function changeToGreen() {
                 sikrer dybde og balance i hver tår.<br><br>
         `;
 
-        // Skift variantens tilstand til Green
+        // Skifter variantens tilstand til Green
         currentVariant = "green";
 
-        // Skjul ZeroBuzz Green containeren igen
+        // Skjuler ZeroBuzz Green containeren igen
         document.querySelector(".boksTilHverVariantGreen").style.display = "none";
 
-        // Skjul ZeroBuzz Pink containeren igen
+        // så man kan se og trykke på ZeroBuzz Pink igen
         document.querySelector(".boksTilHverVariantPink").style.display = "flex";
-
 
         // Rul til toppen af siden når funktionen er kørt
         window.scrollTo(0, 0);
     }
 }
 
-// Tilføj event listeners
+// Event listeners som reagerer når man trykker på dåserne nedest på siden
 document.querySelector(".boksTilHverVariantPink").addEventListener("click", changeToPink);
 document.querySelector(".boksTilHverVariantGreen").addEventListener("click", changeToGreen);

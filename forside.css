@@ -31,16 +31,6 @@
     margin-top: -30px;
 }
 
-.gulPunktum {
-    color: #FFDE17; /* Gul farve */
-}
-
-/* --------- intro tekst på forside ------------------- */
-.introTekst {
-    margin: 50px 0 50px 10%;
-    width: 70%;
-}
-
 
 /* ------------ Produkt container med slider -----------------*/
 .produktContainer {
@@ -73,27 +63,6 @@
     transform: scale(1.1);
     transition: 0.3s ease;
 }
-
-/*------- Citat med graduering --------- */
-/* Container, der dækker hele bredden */
-.citatContainer {
-    display: flex;
-    align-items: center;
-    width: auto;
-    padding: 20px;
-    background: linear-gradient(to bottom, #FFFCF6 , #FFDF98, #EB877B, #FFFCF6);
-    opacity: 90%;
-    height: 550px;
-    z-index: -1;
-  }
-  
-  .citat {
-    color: #ffffff;
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
-    font-size: 70px;
-  }
 
 
 /* ----- Vores historie del med billede og tekst ----- */
