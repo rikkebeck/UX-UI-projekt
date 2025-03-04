@@ -127,7 +127,9 @@ p {
 }
 
 .topNav.scrolled {
-    background-color: rgba(255, 255, 255, 0.8); /* Eksempel på baggrundsfarve, kan justeres */
+    background-color: rgba(255, 252, 246, 0.9); /* Gør den lidt tydeligere */
+    transition: background-color 0.3s ease-in-out;
+    backdrop-filter: blur(5px); /* Tilføjer en moderne glas-effekt */
 }
 
 /* ----------------------------Footer------------------------ */
