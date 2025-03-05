@@ -4,6 +4,12 @@
     backdrop-filter: blur(5px);
 }
 
+/* farve på det menupunkt som man er inde på*/
+.nav-link.active {
+    color: #FFDE17; /* Skift farven til din ønskede farve */
+    font-weight: bold;
+}
+
 h1 {
     color: #2c2c2c;
     text-align: center;

@@ -70,7 +70,6 @@ h6 {
 
 p {
     font-family: "Inter", serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     color: #2c2c2c;
@@ -189,7 +188,6 @@ p {
 .footerContainer {
     display: flex;
     justify-content: space-between;
-    align-items: left;
     padding: 0 5%;
 }
 

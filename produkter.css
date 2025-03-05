@@ -4,6 +4,13 @@
     backdrop-filter: blur(5px);
 }
 
+/* farve på det menupunkt som man er inde på*/
+.nav-link.active {
+    color: #FFDE17; /* Skift farven til din ønskede farve */
+    font-weight: bold;
+}
+
+
 /* styling af flexboks øverst med dåse og tekst */
 .produktContainer {
     display: flex;
@@ -41,7 +48,6 @@
 td {
     font-size: 12px;
     font-family: "Inter", serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     width: 75%;
@@ -88,6 +94,7 @@ td {
     transform: scale(1.1);
     transition: 0.3s ease;
 }
+
 
 
 
